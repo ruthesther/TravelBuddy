@@ -12,10 +12,10 @@
 
         <TextView
             android:id="@+id/logos"
-            android:layout_width="240dp"
-            android:layout_height="32dp"
+            android:layout_width="225dp"
+            android:layout_height="39dp"
             android:layout_marginStart="62dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="105dp"
             android:ellipsize="marquee"
             android:fadingEdge="horizontal"
@@ -28,6 +28,7 @@
             android:textSize="36sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -74,7 +75,7 @@
                         android:id="@+id/Profile"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/imageView"
+                        android:layout_below="@id/profile_image"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
                         android:fontFamily="serif-monospace"
@@ -84,7 +85,7 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/imageView"
+                        android:id="@+id/profile_image"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
@@ -92,7 +93,7 @@
                         android:layout_marginTop="15dp"
                         android:layout_marginEnd="10dp"
                         android:layout_marginBottom="10dp"
-                        app:srcCompat="@drawable/profile" />
+                        app:srcCompat="@drawable/avatar" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -107,10 +108,10 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:id="@+id/textView4"
+                        android:id="@+id/search_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/imageView3"
+                        android:layout_below="@id/search_image"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
                         android:fontFamily="serif-monospace"
@@ -120,7 +121,7 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/imageView3"
+                        android:id="@+id/search_image"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
@@ -139,7 +140,6 @@
             android:orientation="horizontal"
             android:padding="10dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
