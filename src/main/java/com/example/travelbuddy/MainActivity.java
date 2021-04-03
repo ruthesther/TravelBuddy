@@ -46,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
            startActivity(i);
        });
 
+       SearchBtn.setOnClickListener(v -> {
+           Intent search = new Intent(MainActivity.this, Search.class);
+           startActivity(search);
+       });
+
     }
 
     public void logout(View view) {

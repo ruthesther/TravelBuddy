@@ -24,8 +24,14 @@
         </activity>
         <activity android:name=".Login" />
         <activity android:name=".MainActivity" />
+
+        <!-- Profile Option -->
         <activity android:name=".Profile" />
         <activity android:name=".EditProfile" />
+
+        <!-- Search Option -->
+        <activity android:name=".Search" />
+        <activity android:name=".PlacesActivity" />
 
     </application>
 
