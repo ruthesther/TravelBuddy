@@ -128,3 +128,4 @@ public class PlacesAdapter extends RecyclerView.Adapter<PlacesAdapter.CustomView
         }
       }
 }
+
