@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.text.DateFormat;
@@ -15,6 +16,8 @@ import java.util.Calendar;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
+    ImageView ProfileBtn, TodoBtn;
+    ImageView SearchBtn, HotelBtn, ItineraryBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +34,23 @@ public class MainActivity extends AppCompatActivity {
         textViewDate.setText(currentDate);
         TextView textViewTime = findViewById(R.id.cTimes);
         textViewTime.setText(currentTime);
+
+        ProfileBtn = findViewById(R.id.profile_image);
+        SearchBtn = findViewById(R.id.search_image);
+        HotelBtn = findViewById(R.id.hotelImage);
+        TodoBtn = findViewById(R.id.todoImage);
+        ItineraryBtn = findViewById(R.id.imageSaved);
+
+       ProfileBtn.setOnClickListener(v -> {
+           Intent i = new Intent(MainActivity.this, Profile.class);
+           startActivity(i);
+       });
+
     }
 
     public void logout(View view) {
         FirebaseAuth.getInstance().signOut();
         startActivity(new Intent(getApplicationContext(),Login.class));
-        finish();
     }
 
 }
