@@ -51,6 +51,11 @@ public class MainActivity extends AppCompatActivity {
            startActivity(search);
        });
 
+       TodoBtn.setOnClickListener(v -> {
+           Intent notes = new Intent(MainActivity.this, Notes.class);
+           startActivity(notes);
+       });
+
     }
 
     public void logout(View view) {

@@ -33,6 +33,10 @@
         <activity android:name=".Search" />
         <activity android:name=".PlacesActivity" />
 
+        <!-- Notes Option -->
+        <activity android:name=".Notes" />
+        <activity android:name=".NoteEditorActivity" />
+
     </application>
 
 </manifest>
