@@ -37,6 +37,11 @@
         <activity android:name=".Notes" />
         <activity android:name=".NoteEditorActivity" />
 
+        <!-- Itinerary Option -->
+        <activity android:name=".Itinerary" />
+        <activity android:name=".ItinerarySearch" />
+        <activity android:name=".ItineraryResults"/>
+
     </application>
 
 </manifest>

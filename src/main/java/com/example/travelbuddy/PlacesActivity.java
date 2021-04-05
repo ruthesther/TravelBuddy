@@ -257,7 +257,7 @@ public class PlacesActivity extends AppCompatActivity {
 
         if (requestCode == 202) {
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                showToast("Permission deaned");
+                showToast("Permission denied");
                finish();
             }else {
                 showToast("Permission granted successfully");
@@ -293,7 +293,7 @@ public class PlacesActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 2021) {
             if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-                showToast("GPS Enable successfully");
+                showToast("GPS Enabled successfully");
                 getUserLocation();
             } else {
                 showToast("Please Enable Gps");

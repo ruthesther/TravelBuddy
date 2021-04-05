@@ -56,6 +56,11 @@ public class MainActivity extends AppCompatActivity {
            startActivity(notes);
        });
 
+       ItineraryBtn.setOnClickListener(v -> {
+           Intent itinerary = new Intent(MainActivity.this, ItinerarySearch.class);
+           startActivity(itinerary);
+       });
+
     }
 
     public void logout(View view) {
